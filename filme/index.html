@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="blogFilme">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Filmes</title>
+</head>
+<body>
+    <div id="bootstrap-overrides">
+    <div class="bg-dark">
+        <h1 class="fs-1 text-white text-center p-5 fw-secondary">Filmes</h1>
+        <div class="container-fluid">
+          <div class="row text-center" ng-controller="Rest">
+            <div class="col-12 col-sm-3" ng-repeat="movie in movies">
+              <div class="mt-5 image" id="card">
+                <img class="img-fluid rounded" src="https://image.tmdb.org/t/p/w200{{ movie.poster_path }}">
+                  <h1 class="text-white fw-light p-3 fs-5">{{ movie.title }}</h1>
+                  <a href="paginaAberta.html" class="btn btn-primary btn-lg" role="button" ng-click="linha($index)">Veja Mais!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+<div id="bootstrap-overrides">
+    <footer class="flex-shrink-0 py-10 bg-secondary text-white-50">
+        <div class="container text-center">
+          <small>vinifranck</small>
+        </div>
+      </footer>
+    </div>
+      <script src="./js/script.js"></script>
+</body>
+
+</html>

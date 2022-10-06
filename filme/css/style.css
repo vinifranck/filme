@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #3a3a3a;
+    color: white;
+}
+
+.image img{
+    margin-top: 4vh;
+    height: 300px ;
+}
+footer{
+    margin-bottom:5rem;
+}
+img{
+    height:500px;
+}
+
